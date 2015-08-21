@@ -21,4 +21,13 @@
 }
 
 
+- (IBAction)showLabel:(id)sender {
+
+    
+    UIButton *btn = (UIButton *)sender;
+    self.topLabel.text = btn.titleLabel.text;
+    self.middleLabel.text = btn.titleLabel.text;
+    self.bottomLabel.text = btn.titleLabel.text;
+
+}
 @end
