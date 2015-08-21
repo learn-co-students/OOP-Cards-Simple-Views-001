@@ -10,4 +10,10 @@
 
 @interface CardSwitcherViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *topLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bottomLabel;
+@property (weak, nonatomic) IBOutlet UILabel *middleLabel;
+
+- (IBAction)showLabel:(id)sender;
+
 @end
