@@ -22,4 +22,27 @@
                                                 rank:@"10"];
 }
 
+-(void)changeAllLabelsToDisplayCard:(FISCard *)card
+{
+    self.topLabel.text = [NSString stringWithFormat:@"%@", card.cardLabel];
+    self.middleLabel.text = [NSString stringWithFormat:@"%@", card.cardLabel];
+    self.bottomLabel.text = [NSString stringWithFormat:@"%@", card.cardLabel];
+}
+
+- (IBAction)threeOfSpadesTapped:(UIButton *)sender {
+    [self changeAllLabelsToDisplayCard:self.threeOfSpades];
+}
+
+- (IBAction)fourOfClubsTapped:(id)sender {
+    [self changeAllLabelsToDisplayCard:self.fourOfClubs];
+}
+
+- (IBAction)eightOfDiamondsTapped:(UIButton *)sender {
+    [self changeAllLabelsToDisplayCard:self.eightOfDiamonds];
+}
+
+- (IBAction)tenOfHeartsTapped:(UIButton *)sender {
+    [self changeAllLabelsToDisplayCard:self.tenOfHearts];
+}
+
 @end
